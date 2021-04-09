@@ -1,0 +1,370 @@
+{
+  "i3": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "70",
+    "battery": "50"
+  },
+  "i3s": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "70",
+    "battery": "50"
+  },
+  "i4": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "70",
+    "battery": "50"
+  },
+  "i4s": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "70",
+    "battery": "50"
+  },
+  "i5": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "30",
+    "battery": "50"
+  },
+  "i5s": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "30",
+    "battery": "50"
+  },
+  "i5c": {
+    "crackedFront": "40",
+    "water": "80",
+    "crackedBack": "30",
+    "battery": "50"
+  },
+  "i6": {
+    "crackedFront": "60",
+    "water": "100",
+    "crackedBack": "50",
+    "battery": "50"
+  },
+  "i6+": {
+    "crackedFront": "60",
+    "water": "100",
+    "crackedBack": "50",
+    "battery": "50"
+  },
+  "i6s": {
+    "crackedFront": "60",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"
+  },
+  "i6s+": {
+    "crackedFront": "60",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"
+  },
+  "iSE": {
+    "crackedFront": "70",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "50"
+  },
+  "i7": {
+    "crackedFront": "250",
+    "water": "200",
+    "crackedBack": "150",
+    "battery": "150"
+  },
+  "i7+": {
+    "crackedFront": "250",
+    "water": "200",
+    "crackedBack": "150",
+    "battery": "150"
+  },
+  "i8": {
+    "crackedFront": "250",
+    "water": "200",
+    "crackedBack": "150",
+    "battery": "150"
+  },
+  "i8+": {
+    "crackedFront": "250",
+    "water": "200",
+    "crackedBack": "150",
+    "battery": "150"
+  },
+  "iX": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"
+  },
+  "iXR": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"
+  },
+  "iXS": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"
+  },
+  "iXSM": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"
+  },
+  "i11": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "i11p": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "i11pM": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "g2": {
+    "crackedFront": "130",
+    "water": "100",
+    "crackedBack": "10",
+    "battery": "50"},
+  "g3": {
+    "crackedFront": "130",
+    "water": "100",
+    "crackedBack": "10",
+    "battery": "50"},
+  "g4": {
+    "crackedFront": "130",
+    "water": "100",
+    "crackedBack": "10",
+    "battery": "50"},
+  "g5": {
+    "crackedFront": "130",
+    "water": "100",
+    "crackedBack": "10",
+    "battery": "50"},
+  "g6": {
+    "crackedFront": "200",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"},
+  "g6e": {
+    "crackedFront": "200",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"},
+  "g6e+": {
+    "crackedFront": "200",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"},
+  "g7": {
+    "crackedFront": "200",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"},
+  "g7e": {
+    "crackedFront": "200",
+    "water": "100",
+    "crackedBack": "80",
+    "battery": "80"},
+  "g8": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "g8+": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "g9": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "g9+": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "g10": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+  "g10+": {
+    "crackedFront": "400",
+    "water": "200",
+    "crackedBack": "200",
+    "battery": "150"},
+
+
+
+  "unkDesk": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "100",
+    "crackedFront": "N/A",
+    "water": "100",
+    "battery": "0"
+  },
+  "unkLap": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "100",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "100"
+  },
+  "macbookBefore09": {
+    "virus": "20",
+    "OSupgrade": "50",
+    "speedup": "40",
+    "ssd": "N/A",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "100"
+  },
+  "macbookAfter09": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "N/A",
+    "crackedFront": "150",
+    "water": "120",
+    "battery": "150"
+  },
+  "iMac": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "N/A",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "N/A"
+  },
+  "macmini": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "N/A",
+    "crackedFront": "N/A",
+    "water": "100",
+    "battery": "N/A"
+  },
+  "surface": {
+    "virus": "30",
+    "OSupgrade": "40",
+    "speedup": "50",
+    "ssd": "N/A",
+    "crackedFront": "150",
+    "water": "100",
+    "battery": "150"
+  },
+  "chromebook": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "N/A",
+    "crackedFront": "100",
+    "water": "100",
+    "battery": "150"
+  },
+  "dell": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "hp": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "asus": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "acer": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "lenovo": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "samsung": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "MSI": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "ibuypower": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "80",
+    "crackedFront": "120",
+    "water": "100",
+    "battery": "150"
+  },
+  "alienware": {
+    "virus": "20",
+    "OSupgrade": "30",
+    "speedup": "40",
+    "ssd": "120",
+    "crackedFront": "200",
+    "water": "100",
+    "battery": "150"
+  }
+
+}
+

@@ -1,0 +1,21 @@
+/*styling for the bottom copyright information*/
+footer {
+    font-style: normal;
+	font-size: 14px;
+	text-align: center;
+}
+
+/*header and footer color change*/
+.headfoot {
+	color: #996600;
+}
+
+/*styling for the Google Map link*/
+#locationlink {
+	color: #008000;
+}
+
+/*styling for the address*/
+address {
+	color: #FF0000
+}

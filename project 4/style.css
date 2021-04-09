@@ -1,0 +1,134 @@
+.title {
+    font-family: "Arial", Times, serif; /*backup fonts*/
+    /*center align text, font 32, bold*/
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.body {
+    font-family: "Arial", Times, serif; /*backup fonts*/
+    text-align: center;
+    padding-bottom:60px;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: auto; /*center align the navigation bar*/
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    width:40%;
+}
+
+.navbar li {
+    float: left;
+    font-family: "Verdana", Arial, Times, serif; /*backup fonts*/
+    border-right:1px solid #bbb;
+    font-size: 13px;
+    width:19.5%;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/*.footer {
+    padding-bottom:60px;
+    position:fixed;
+    bottom:15px;
+    width:100%;
+    height:20px;
+    text-align:center;
+    background-color: #4CAF50;
+    opacity: 95%;
+}*/
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.footer {
+    padding: 100px 0 0 0;
+    /*padding-bottom:75px;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    text-align:center;
+    /*background-color: #4CAF50;*/
+    opacity: 95%;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+hr.top {
+    border-top: 2px solid #8400FF;
+    width: 850px;
+}
+
+
+/* for the dropdown menu:*/
+/* TODO fix dropdown colors. doesn't change color when hovered over */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    padding: 12px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #8400FF;
+}
+
+
+/* to split page into 2 columns*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: ""; /* so we get a new line*/
+    display: table;
+    clear: both;
+}

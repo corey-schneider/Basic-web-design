@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechRevival - About us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/openingTimes.jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('#open_or_closed').openingTimes({
+                openingTimes: {
+                    'Monday'    : ['09:00' , '18:00' ],
+                    'Tuesday'   : ['17:00' , '21:00' ],
+                    'Wednesday' : ['09:00' , '18:00' ],
+                    'Thursday'  : false,
+                    'Friday'    : ['12:00' , '17:00' ],
+                    'Saturday'  : ['12:00' , '17:00' ],
+                    'Sunday'    : ['12:00' , '17:00' ]
+                },
+                openString:"OPEN! Come on in",
+                closedString:"closed",
+                openClass:"open2",
+                closedClass:"closed2"
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="page-container"> <!-- This is to set the footer to the bottom of all of this content: -->
+    <div class="title">
+        <h3>TechRevival</h3>
+        <hr class="top">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./estimates.html">Estimate / Quote</a></li>
+            <li><a href="./locations.html">Location finder</a></li>
+            <li><a href="./repairs.html">Repairs offered</a></li>
+            <li class="dropdown">
+                <a class="active" href="#">About</a>
+                <div class="dropdown-content">
+                    <a href="./about-faq.html">FAQ</a>
+                    <a href="./about-contact.html">Contact Us</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <h2>About Us</h2>
+        <p>
+            TechRevival is a company founded in 2019. Whenever a friend's phone would crack, they'd always know to come<br>
+            to Corey or Carson. We wouldn't rip them off, we were always very fair with our prices, and usually had them<br>
+            back out in the wild within an hour. After friends of friends began coming to us, we realized our potential. We<br>
+            decided to start a business to handle cell phone repairs, laptop glass repairs, computer virus removal, and a<br>
+            variety of other services to help '<i>revive</i>' '<i>tech</i>' –– hence, TechRevival.<br><br><br><br>
+        </p>
+        <p>
+            <strong>Business hours</strong><br>
+            Mon: . . . . . . . . . . . . . .9am - 6pm<br>
+            Tues: . . . . . . . . . . . . . 5pm - 9pm<br>
+            Wed: . . . . . . . . . . . . . 9am - 6pm<br>
+            Thurs: . . . . . . . . . . . . . . . Closed<br>
+            Fri, Sat, Sun: . . . . . . 12pm - 5pm<br><br>
+            <h2>We are currently <span id="open_or_closed">[error loading plugin, contact cschne11@uncc.edu]</span>.</h2><br><br>
+        </p>
+        <p>
+            <strong>Staff</strong><br>
+            Corey Schneider  -  cschne11@uncc.edu<br>
+            Carson Goins  -  cgoins11@uncc.edu<br>
+        </p>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <p>Copyright &copy; 2019 Schneider</p>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </div>
+</div>
+
+</body>
+</html>

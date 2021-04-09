@@ -1,0 +1,213 @@
+.title {
+    font-family: "Arial", Times, serif; /*backup fonts*/
+    /*center align text, font 32, bold*/
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.body {
+    font-family: "Arial", Times, serif; /*backup fonts*/
+    text-align: center;
+    padding-bottom:60px;
+}
+
+/* Small spinning gif for when Google maps iframe is loading, so the user knows its actively loading and not broken */
+.iframe-loading {
+    background:url("../images/loading2.gif") center center no-repeat;
+}
+
+/* Hours table properties */
+table#hours {
+    border: 1px solid #000000;
+    background-color: #F9F8EE;
+    border-collapse: collapse;
+    font-family: 'Proxima-Nova-Soft', 'Verdana', sans-serif;
+}
+
+/* add a new font for the Hours table */
+@font-face {
+    font-family: "Proxima-Nova-Soft";
+    src: url("../css/Proxima-Nova-Soft.ttf") format("truetype");
+}
+
+/* th and td elements in a table */
+th, td {
+    padding: 10px;
+    border: 1px solid #b3b3ae;
+    border-collapse: collapse;
+}
+
+/* Colors every even element's background white */
+tr:nth-child(even) {
+    background-color: white;
+}
+
+
+/* Works with "./about.html" and "./js/about-page-script.js" to highlight today's date on the business hours sheet. */
+tr[id="selected-day-open"] {
+    background-color: #61FF65;
+    padding:50px;
+    border: 2px dotted black;
+}
+tr[id="selected-day-closed"] {
+    background-color: rgba(255, 0, 0, 0.67);
+    padding:50px;
+    border: 2px dotted black;
+}
+
+/* This is the block for the Contact Us page, so we can center AND left align text.  */
+.block {
+    /*    color: #FFF;
+        background-color: #5995DA;
+        font-weight: bold;
+        padding: 20px;
+        border: 2px solid #5D6063;
+        border-radius: 5px;*/
+    /*width: 500px;*/
+    width: 30vw;
+    text-align: left;
+    margin: auto;
+}
+
+/* Block 2 is 5% less than the length of the nav bar to make content fit underneath the bar */
+.block2 {
+    width: 40vw; /* 40% of the view width */
+    text-align: left;
+    margin: auto;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: auto; /*center align the navigation bar*/
+    padding: 0;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    background-color: #333333;
+    width:45%;
+}
+
+.navbar li {
+    float: left;
+    font-family: "Verdana", Arial, Times, serif; /*backup fonts*/
+    border-right:1px solid #bbb;
+    font-size: 13px;
+    /*font-size: 0.7vw;*/
+    width:20%;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* color of selected nav bar item */
+.active {
+    background-color: #4CAF50;
+}
+
+/* color of semi-active nav bar item, like About > FAQ, this
+* would highlight About this color, and FAQ the .active color */
+.semi-active {
+    background-color: rgba(76, 175, 80, 0.51);
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;     /* Footer height */
+}
+
+.footer {
+    padding: 100px 0 0 0;
+    /*padding-bottom:75px;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;             /* Footer height */
+    text-align:center;
+    /*background-color: #4CAF50;*/
+    opacity: 95%;
+}
+
+/* container for the full height of our page, this is used to force the footer to the bottom */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Top of page horizontal rule property */
+hr.top {
+    border-top: 2px solid #8400FF;
+    width: 850px;
+}
+
+/* Middle of page horizontal rule property */
+hr.mid {
+    border-top: 1px solid #0077f0;
+    width: 450px;
+}
+
+
+/* for the dropdown menu:*/
+
+/* When we hover over the nav bar: */
+.navbar li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+/* For drop-down sub menus (example would be About > FAQ) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    min-width: 170px;
+}
+
+.dropdown-content a {
+    padding: 12px;
+    display: block;
+    text-align: left;
+}
+
+/* Dropdown style for menu bar */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Maybe overkill, but a standard "border" tag would include the top, which we don't want.
+     This would make a black line appear between "About" and "FAQ" */
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+
+/* to split page into 2 columns*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: ""; /* so we get a new line*/
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechRevival - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="page-container"> <!-- This is to set the footer to the bottom of all of this content: -->
+    <div class="title">
+        <a href="./index.html"><img src="images/TechRevival-logo.png" alt="TechRevival Logo"></a>
+        <hr class="top">
+    </div>
+    <div class="navbar" aria-label="Navigation bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./estimates.html">Estimates</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+            <li><a href="./repairs.html">Repair info</a></li>
+            <li class="dropdown">
+                <a class="semi-active" href="./about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="./about-faq.html">FAQ</a>
+                    <a class="active" href="./about-contact.html">Contact Us</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body" >
+        <h2>Contact Us</h2>
+        <hr class="mid"><br>
+
+        <div class="block">
+            <!-- This uses an online form to handle the contact form. This is my work-around
+            because UNCC's website doesn't execute php files. Trying to save messages to a text
+            file locally is unsafe. -->
+            <form action="https://formspree.io/mqkalweq" method="POST">
+                <label>
+                    Your name:<br>
+                    <input type="text" aria-label="Name box" name="name" required>
+                </label><br><br>
+                <label>
+                    Your email address:<br>
+                    <input type="email" aria-label="Email address box" name="replyto" required>
+                </label><br><br>
+                <label>
+                    Message:<br>
+                    <p style="font-size:12px">(Maximum of 500 characters)</p>
+                    <textarea name="message" aria-label="Message box" rows="10" cols="60" maxlength="500" required></textarea>
+                </label>
+                <br>
+                <br>
+                <button type="submit" aria-label="Send" title="Send">Send message</button>
+            </form>
+
+            <!--            <form id="contactUsForm">
+                            Your name:<br>
+                            <input type="text" id="name" value="" required>
+                            <br>
+                            Your e-mail address:<br>
+                            <input type="email" id="email" value="" required>
+                            <br>
+                            Message:<br>
+                            <textarea id="msg" rows="15" cols="60" maxlength="200" required></textarea>
+                            <br><br>
+                            <input type="button" value="Submit" id="submitForm">
+                        </form>-->
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <hr>
+            <p>Copyright &copy; 2019 <a href="https://github.com/corey-schneider/">Corey Schneider</a></p>
+            <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

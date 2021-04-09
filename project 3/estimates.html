@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechRevival - Estimates</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="./js/chosen/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="./js/chosen/chosen.css">
+    <script src="./js/estimate-script.js"></script>
+</head>
+<body>
+<div id="page-container"> <!-- This is to set the footer to the bottom of all of this content: -->
+    <div class="title">
+        <h3>TechRevival</h3>
+        <hr class="top">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a class="active" href="#./estimates.html">Estimate / Quote</a></li>
+            <li><a href="./locations.html">Location finder</a></li>
+            <li><a href="./repairs.html">Repairs offered</a></li>
+            <li class="dropdown">
+                <a href="./about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="./about-faq.html">FAQ</a>
+                    <a href="./about-contact.html">Contact Us</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body">
+
+        <h2>Estimates</h2>
+
+        <p>Select your device:</p>
+        <!-- TODO find a better way to do this. This isn't practical -->
+        <div class="row">
+            <div class="column">
+                <img src="images/phone_icon.svg" alt="phone icon">
+                <h4>Phones:</h4>
+                <p>
+
+                    <select onchange="disableComputerList();" data-placeholder="Choose a phone..." class="phoneList" id = "phoneList">
+                        <option value = ""></option> <!-- Empty value to allow a placeholder -->
+                        <option value = "iPhone 3G">iPhone 3G</option>
+                        <option value = "iPhone 3GS">iPhone 3GS</option>
+                        <option value = "iPhone 4">iPhone 4</option>
+                        <option value = "iPhone 4S">iPhone 4S</option>
+                        <option value = "iPhone 5">iPhone 5</option>
+                        <option value = "iPhone 5c">iPhone 5c</option>
+                        <option value = "iPhone 5s">iPhone 5s</option>
+                        <option value = "iPhone 6">iPhone 6</option>
+                        <option value = "iPhone 6 Plus">iPhone 6 Plus</option>
+                        <option value = "iPhone 6s">iPhone 6s</option>
+                        <option value = "iPhone 6s Plus">iPhone 6s Plus</option>
+                        <option value = "iPhone SE">iPhone SE</option>
+                        <option value = "iPhone 7">iPhone 7</option>
+                        <option value = "iPhone 7 Plus">iPhone 7 Plus</option>
+                        <option value = "iPhone 8">iPhone 8</option>
+                        <option value = "iPhone 8 Plus">iPhone 8 Plus</option>
+                        <option value = "iPhone X">iPhone X</option>
+                        <option value = "iPhone XR">iPhone XR</option>
+                        <option value = "iPhone XS">iPhone XS</option>
+                        <option value = "iPhone XS Max">iPhone XS Max</option>
+                        <option value = "iPhone 11">iPhone 11</option>
+                        <option value = "iPhone 11 Pro">iPhone 11 Pro</option>
+                        <option value = "iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+                        <option value = "Galaxy S2">Galaxy S2</option>
+                        <option value = "Galaxy S3">Galaxy S3</option>
+                        <option value = "Galaxy S4">Galaxy S4</option>
+                        <option value = "Galaxy S5">Galaxy S5</option>
+                        <option value = "Galaxy S6">Galaxy S6</option>
+                        <option value = "Galaxy S6 edge">Galaxy S6 edge</option>
+                        <option value = "Galaxy S6 edge+">Galaxy S6 edge+</option>
+                        <option value = "Galaxy S7">Galaxy S7</option>
+                        <option value = "Galaxy S7 edge">Galaxy S7 edge</option>
+                        <option value = "Galaxy S8">Galaxy S8</option>
+                        <option value = "Galaxy S8+">Galaxy S8+</option>
+                        <option value = "Galaxy S9">Galaxy S9</option>
+                        <option value = "Galaxy S9+">Galaxy S9+</option>
+                        <option value = "Galaxy S10">Galaxy S10</option>
+                        <option value = "Galaxy S10+">Galaxy S10+</option>
+                    </select>
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/computer_icon.svg" alt="computer icon">
+                <h4>Computers:</h4>
+                <p>
+                    <select onchange="disablePhoneList();" data-placeholder="Choose a computer..." class="computerList" id = "computerList">
+                        <option value = ""></option> <!-- Empty value to allow a placeholder -->
+                        <option value = "Unknown desktop">Unknown desktop</option>
+                        <option value = "Unknown laptop">Unknown laptop</option>
+                        <option value = "MacBook Air/Pro pre-2009">MacBook Air/Pro pre-2009</option>
+                        <option value = "MacBook Air/Pro 2010-newer">MacBook Air/Pro 2010-newer</option>
+                        <option value = "iMac">iMac</option>
+                        <option value = "Mac mini">Mac mini</option>
+                        <option value = "Microsoft Surface">Microsoft Surface</option>
+                        <option value = "Chromebook">Chromebook</option>
+                        <option value = "Dell laptop / desktop">Dell laptop / desktop</option>
+                        <option value = "HP laptop / desktop">HP laptop / desktop</option>
+                        <option value = "Asus laptop / desktop">Asus laptop / desktop</option>
+                        <option value = "Acer laptop / desktop">Acer laptop / desktop</option>
+                        <option value = "Lenovo laptop / desktop">Lenovo laptop / desktop</option>
+                        <option value = "Samsung laptop / desktop">Samsung laptop / desktop</option>
+                        <option value = "MSI">MSI laptop / desktop</option>
+                        <option value = "iBUYPOWER">iBUYPOWER laptop / desktop</option>
+                        <option value = "Alienware">Alienware laptop / desktop</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <p>Select your requested repair type:</p>
+        <p>
+            <select data-placeholder="Choose a repair..." class="problemList" id = "problemList">
+                <option value = ""></option> <!-- Empty value to allow a placeholder -->
+                <option value = "Virus removal">Virus removal</option>
+                <option value = "OS upgrade">OS upgrade (Windows 7 to 10, etc)</option>
+                <option value = "Speed up">Speed up an old computer</option>
+                <option value = "SSD">Solid State Drive installations</option>
+                <option value = "Broken laptop screen repairs">Broken laptop screen repairs</option>
+                <option value = "Cracked screen">Cracked screen (phone / laptop)</option>
+                <option value = "Water damage">Water damage (MUST be within 24 hrs of first contact with water)</option>
+                <option value = "Broken back glass repair">Broken back glass repair</option>
+                <option value = "New battery installation">New battery installation (laptop or phone)</option>
+            </select>
+        </p>
+        <p style="font-size:12px">(Note: If your problem is not listed, we are unable to provide an accurate quote)</p>
+        <br><br>
+        <p><strong>Estimated cost: <p style="color:green">$ ###</p></strong></p>
+        <!-- TODO make this work with javascript -->
+    </div>
+    <div class="footer">
+        <hr>
+        <p>Copyright &copy; 2019 Schneider</p>
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </div>
+</div>
+
+</body>
+</html>

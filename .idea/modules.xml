@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exercise.iml" filepath="$PROJECT_DIR$/.idea/Exercise.iml" />
+      <module fileurl="file://$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/activity 15/.idea/activity 15.iml" filepath="$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/activity 15/.idea/activity 15.iml" />
+      <module fileurl="file://$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/activity 16/.idea/activity 16.iml" filepath="$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/activity 16/.idea/activity 16.iml" />
+      <module fileurl="file://$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/project 3/.idea/project 3.iml" filepath="$USER_HOME$/.bitnami/stackman/machines/xampp/volumes/root/htdocs/project 3/.idea/project 3.iml" />
+    </modules>
+  </component>
+</project>

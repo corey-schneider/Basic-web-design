@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Tuxedo Cat Coffee</title>
+	<meta charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="Midterm.css">
+	<script src="Midterm.js"></script>
+</head>
+<body>
+<header>
+	<h1>Tuxedo Cat Coffee</h1>
+	<img src="images/logo.png" alt="Morning Coffee"/>
+</header>
+
+<main>
+	<form id="order_form" name="order_form" action="checkout.html" method="get">
+		<section id="menu">
+			<h2>Menu</h2>
+			<p>Click an item to add it to your order.</p>
+			<ul>
+				<li><a href="#" id="espresso"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso"
+									 onmouseover="this.src='images/espresso_info.jpg'"
+									 onmouseout="this.src='images/espresso.jpg'"
+				/></a></li>
+
+				<li><a href="#" id="latte"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte"
+									 onmouseover="this.src='images/latte_info.jpg'"
+									 onmouseout="this.src='images/latte.jpg'"/></a></li>
+
+				<li><a href="#" id="cappuccino"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino"
+									 onmouseover="this.src='images/cappuccino_info.jpg'"
+									 onmouseout="this.src='images/cappuccino.jpg'"/></a></li>
+
+				<li><a href="#" id="coffee"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee"
+									 onmouseover="this.src='images/coffee_info.jpg'"
+									 onmouseout="this.src='images/coffee.jpg'"/></a></li>
+
+				<li><a href="#" id="biscotti"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti"
+									 onmouseover="this.src='images/biscotti_info.jpg'"
+									 onmouseout="this.src='images/biscotti.jpg'"/></a></li>
+
+				<li><a href="#" id="scone"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone"
+									 onmouseover="this.src='images/scone_info.jpg'"
+									 onmouseout="this.src='images/scone.jpg'"/></a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Your Order</h2>
+			<p id="order">
+				<br>
+			</p>
+			<!-- highlight the total -->
+			<p id="total">&nbsp;</p>
+
+			<div id="buttons">
+						<span>
+						<!-- apply appropriate styling in the CSS file for the buttons. -->
+						<input type="button" class="button" name="place_order" id="place_order" value="Place Order">
+						<input type="button" class="button" name="clear_order" id="clear_order" value="Clear Order">
+						<input type="button" class="button" name="Contact Us" id="contact_us" value="Contact Us">
+					</span>
+			</div>
+		</section>
+	</form>
+</main>
+
+<footer>
+	<br/>
+	<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+	<br/>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+</footer>
+
+</body>
+</html>

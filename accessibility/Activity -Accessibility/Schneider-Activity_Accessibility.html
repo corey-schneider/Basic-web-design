@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+  <link rel="stylesheet" href="Schneider-Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+  <script src="Schneider-Activity_Accessibility.js"></script>
+</head>
+
+<body>
+  <header>
+    <h3>Time to Twinkle</h3>
+    <!-- Add heading -->
+  </header>
+  <main>
+
+    <table class="center">
+      <!-- add caption -->
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers using scope attribute for accessibility, make images accessible-->
+          <th >TYPE</th>
+          <th >PRODUCT</th>
+          <th >FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Birthday Candles</th>
+          <!-- Comes in a range of fun, vibrant colors  Small and slender forms allow you to add as many or as few of them to a dessert as you desire. Offers a way to personalize customers' desserts on birthdays and anniversaries-->
+          <td>
+            <img width="100" height="100" alt="Birthday Candles"
+                    src="images/Birthday-Candles.png"/>
+          </td>
+          <td>
+            <ul>
+              <li>Comes in a range of fun, vibrant colors</li>
+              <li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+              <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+            <th>Votives</th>
+            <td>
+              <img width="100" height="100" alt="Voltive Candles"
+                   src="images/voltives.png"/>
+            </td>
+            <td>
+              <ul>
+                <li>Inexpensive and easy to use.</li>
+                <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+              <th>Taper Candles</th>
+              <td>
+                <img width="100" height="100" alt="Taper Candles"
+                     src="images/taper-candles.png"/>
+              </td>
+              <td>
+                <ul>
+                  <li>Commonly known as window candles</li>
+                  <li>Long, slender constructions add dimension to table tops</li>
+                </ul>
+              </td>
+            </tr>
+      </tbody>
+    </table>
+
+    <!--Adjust the contrast of the button-->
+    <button id="openDialog" class= "ClickMe" onclick="openDialog()">Click Me</button>
+
+    <div class="whitespace">
+
+
+    </div>
+
+    <div>
+      <dialog id="dialog" class="dialog">
+        <button class="close"  onclick="closeDialog()">X</button>
+        <!-- Add accessible heading for the form -->
+        <!--Add a accessible form controls-->
+        <h3>Enter your details to win a candle gift box!</h3>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="textfield" aria-required="true"><br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="textfield" aria-required="true"><br><br>
+        <input type="submit" name="submit" value="Submit" onclick="closeDialog()">
+
+      </dialog>
+    </div>
+
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+    <!-- Text color contrast ratio 4.5:1 for web,7:1 for mobile -->
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer id="validation">
+    <br/>
+    <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+  </footer>
+</body>
+</html>

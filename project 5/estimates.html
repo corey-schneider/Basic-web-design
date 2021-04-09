@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechRevival - Estimates</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>-->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="./js/chosen/chosen.jquery.js"></script>
+    <link rel="stylesheet" href="./js/chosen/chosen.css">
+    <script src="./js/estimate-script.js"></script>
+</head>
+<body>
+<div id="page-container"> <!-- This is to set the footer to the bottom of all of this content: -->
+    <div class="title">
+        <a href="./index.html"><img src="images/TechRevival-logo.png" alt="TechRevival Logo"></a>
+        <hr class="top">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar" aria-label="Navigation bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#./estimates.html">Estimates</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+            <li><a href="./repairs.html">Repair info</a></li>
+            <li class="dropdown">
+                <a href="./about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="./about-faq.html">FAQ</a>
+                    <a href="./about-contact.html">Contact Us</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="body">
+
+        <h2>Estimates</h2>
+        <hr class="mid"><br>
+        <p>Select your device:</p>
+        <div class="row">
+            <div class="column">
+                <img src="images/phone_icon.svg" alt="phone icon">
+                <h4>Phones:</h4>
+                <p>
+                    <select onchange="disableComputerList();" data-placeholder="Choose a phone..." class="phoneList" id = "phoneList" aria-label="Phone selector list">
+                        <option value = ""></option> <!-- Empty value to allow a placeholder -->
+                        <option value = "i3">iPhone 3G</option>
+                        <option value = "i3s">iPhone 3GS</option>
+                        <option value = "i4">iPhone 4</option>
+                        <option value = "i4s">iPhone 4S</option>
+                        <option value = "i5">iPhone 5</option>
+                        <option value = "i5c">iPhone 5c</option>
+                        <option value = "i5s">iPhone 5s</option>
+                        <option value = "i6">iPhone 6</option>
+                        <option value = "i6+">iPhone 6 Plus</option>
+                        <option value = "i6s">iPhone 6s</option>
+                        <option value = "i6s+">iPhone 6s Plus</option>
+                        <option value = "iSE">iPhone SE</option>
+                        <option value = "i7">iPhone 7</option>
+                        <option value = "i7+">iPhone 7 Plus</option>
+                        <option value = "i8">iPhone 8</option>
+                        <option value = "i8+">iPhone 8 Plus</option>
+                        <option value = "iX">iPhone X</option>
+                        <option value = "iXR">iPhone XR</option>
+                        <option value = "iXS">iPhone XS</option>
+                        <option value = "iXSM">iPhone XS Max</option>
+                        <option value = "i11">iPhone 11</option>
+                        <option value = "i11p">iPhone 11 Pro</option>
+                        <option value = "i11pM">iPhone 11 Pro Max</option>
+                        <option value = "g2">Galaxy S2</option>
+                        <option value = "g3">Galaxy S3</option>
+                        <option value = "g4">Galaxy S4</option>
+                        <option value = "g5">Galaxy S5</option>
+                        <option value = "g6">Galaxy S6</option>
+                        <option value = "g6e">Galaxy S6 edge</option>
+                        <option value = "g6e+">Galaxy S6 edge+</option>
+                        <option value = "g7">Galaxy S7</option>
+                        <option value = "g7e">Galaxy S7 edge</option>
+                        <option value = "g8">Galaxy S8</option>
+                        <option value = "g8+">Galaxy S8+</option>
+                        <option value = "g9">Galaxy S9</option>
+                        <option value = "g9+">Galaxy S9+</option>
+                        <option value = "g10">Galaxy S10</option>
+                        <option value = "g10+">Galaxy S10+</option>
+                    </select>
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/computer_icon.svg" alt="computer icon">
+                <h4>Computers:</h4>
+                <p>
+                    <select onchange="disablePhoneList();" data-placeholder="Choose a computer..." class="computerList" id = "computerList" aria-label="Computer selector list">
+                        <option value = ""></option> <!-- Empty value to allow a placeholder -->
+                        <option value = "unkDesk">Unknown desktop</option>
+                        <option value = "unkLap">Unknown laptop</option>
+                        <option value = "macbookBefore09">MacBook Air/Pro pre-2009</option>
+                        <option value = "macbookAfter09">MacBook Air/Pro 2010-newer</option>
+                        <option value = "iMac">iMac</option>
+                        <option value = "macmini">Mac mini</option>
+                        <option value = "surface">Microsoft Surface</option>
+                        <option value = "chromebook">Chromebook</option>
+                        <option value = "dell">Dell laptop / desktop</option>
+                        <option value = "hp">HP laptop / desktop</option>
+                        <option value = "asus">Asus laptop / desktop</option>
+                        <option value = "acer">Acer laptop / desktop</option>
+                        <option value = "lenovo">Lenovo laptop / desktop</option>
+                        <option value = "samsung">Samsung laptop / desktop</option>
+                        <option value = "MSI">MSI laptop / desktop</option>
+                        <option value = "ibuypower">iBUYPOWER laptop / desktop</option>
+                        <option value = "alienware">Alienware laptop / desktop</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <p>Select your requested repair type:</p>
+        <p>
+            <select onchange="updateEstimate();" data-placeholder="Choose a repair..." class="problemList" id = "problemList" aria-label="Problem selector list">
+                <option value = ""></option> <!-- Empty value to allow a placeholder -->
+                <option value = "virus">Virus removal</option>
+                <option value = "OSupgrade">OS upgrade (Windows 7 to 10, etc)</option>
+                <option value = "speedup">Speed up an old computer</option>
+                <option value = "ssd">Solid State Drive installations</option>
+                <option value = "crackedFront">Cracked screen</option>
+                <option value = "water">Water damage (MUST be within 24 hrs of first contact with water)</option>
+                <option value = "crackedBack">Broken back glass repair</option>
+                <option value = "battery">New battery installation</option>
+            </select>
+        </p>
+        <p style="font-size:12px">(Note: If your problem is not listed, we are unable to provide an accurate quote)</p>
+        <br><br>
+        <p><strong>Estimated cost: <p id="priceId" style="color:green" aria-label="Estimated cost of repair in US dollars">$ ###</p></strong></p>
+        <div id="info"></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <hr>
+            <p>Copyright &copy; 2019 <a href="https://github.com/corey-schneider/">Corey Schneider</a></p>
+            <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
